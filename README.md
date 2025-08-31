@@ -27,3 +27,22 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+# Deploy at github
+
+Mit diesem Tool kann man direkt einen branch erstellen, in dem nur der /dist enthalten ist. 
+Zum deployen auf github-pages
+'''
+npm install --save-dev gh-pages
+'''
+
+zum committen in den Branch und zum pulishen. (Vorher "npm run build" ausführen!)
+'''
+npm run deploy
+'''
+
+Hiermit kann man direkt den build ausführen, so wie er auf github pages laufen sollte.
+'''
+npm run preview
+'''

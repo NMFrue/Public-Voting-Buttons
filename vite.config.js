@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/nmfrue.github.io/Public-Voting-Buttons/', // das ist dafür, das der bei github pages der d
+  base: '/Public-Voting-Buttons/', // das ist dafür, das der bei github pages der d
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
