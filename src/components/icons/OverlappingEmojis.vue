@@ -3,8 +3,7 @@
     class="emoji-container"
     :style="{
       width: size,
-      height: size,
-      border: border ? '2px dashed gray' : 'none'
+      height: size
     }"
     role="img"
     :aria-label="ariaLabel"

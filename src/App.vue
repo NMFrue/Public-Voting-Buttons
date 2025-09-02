@@ -10,7 +10,20 @@ import TheWelcome from './components/TheWelcome.vue'
 </template>
 
 <style scoped>
-header {
+
+body {
+	margin: 0;
+}
+
+
+:root{
+  --Background-Color: white;
+  --General-highlight-Color: rgb(29, 29, 29); 
+}
+
+
+/* Das folgende ist von Vue.js */
+/* header {
   line-height: 1.5;
 }
 
@@ -35,5 +48,6 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
-}
+} */
 </style>
+
