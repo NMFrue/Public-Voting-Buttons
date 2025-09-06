@@ -1,12 +1,33 @@
- @import './base.css';
+@import './base.css';
 
- a {
+a {
+  text-decoration: none;
   background-color: var(--Background-Color);
   border: 2px solid var(--General-highlight-Color);
   border-radius: 8px;
   padding: 2px 6px;
   color: var(--General-highlight-Color) !important;
   filter: none !important;
+}
+
+button {
+  background-color: var(--Background-Color);
+  border: 2px solid var(--General-highlight-Color);
+  border-radius: 8px;
+  padding: 2px 6px;
+  color: var(--General-highlight-Color) !important;
+  filter: none !important;
+}
+
+body {
+	background-color: var(--Background-Color);
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  color: var(--General-highlight-Color);
 }
 
 /*#app {

@@ -10,12 +10,12 @@
     <div class="parent-container"> 
         <div class="child-container"> 
             <span class="bottom-corner">
-						<div class="CON-info">
-							<a href="/moreAnswer/7"><button>∞</button></a>
-						</div>
-						<div class="CON-info">
-              <a><button class="extra-button"><overlapping-emojis></overlapping-emojis></button></a>
-						</div>
+              <div class="CON-info">
+                <a href=""><button>∞</button></a>
+              </div>
+              <div class="CON-info">
+                <a><button class="extra-button"><overlapping-emojis></overlapping-emojis></button></a>
+              </div>
 						</span>
             <p> 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -34,14 +34,14 @@
 	<div class="main-wrapper">
 
 		<span class="main">
-			<button class="negative" type="submit" name="score" value=-4>-4</button>
-			<button class="negative" type="submit" name="score" value=-3>-3</button>
-			<button class="negative" type="submit" name="score" value=-2>-2</button>
-			<button class="negative" type="submit" name="score" value=-1>-1</button>
-			<button class="positive" type="submit" name="score" value=+1>+1</button>
-			<button class="positive" type="submit" name="score" value=+2>+2</button>
-			<button class="positive" type="submit" name="score" value=+3>+3</button>
-			<button class="positive" type="submit" name="score" value=+4>+4</button>
+			<button class="negative" type="submit" name="score" value=-4 @click="handleVote">-4</button>
+      <button class="negative" type="submit" name="score" value=-3 @click="handleVote">-3</button>
+			<button class="negative" type="submit" name="score" value=-2 @click="handleVote">-2</button>
+			<button class="negative" type="submit" name="score" value=-1 @click="handleVote">-1</button>
+			<button class="positive" type="submit" name="score" value=+1 @click="handleVote">+1</button>
+			<button class="positive" type="submit" name="score" value=+2 @click="handleVote">+2</button>
+			<button class="positive" type="submit" name="score" value=+3 @click="handleVote">+3</button>
+			<button class="positive" type="submit" name="score" value=+4 @click="handleVote">+4</button>
 		</span>
 	</div>
 
@@ -49,6 +49,30 @@
 </div>
 </div>
 </template>
+
+
+
+
+
+
+<script>
+import { useDropdownStore } from "@/stores/dropdownStore";
+
+export default {
+  methods: {
+    handleVote(event) {
+      this.answererVisible = true;
+      const button = event.target;
+      let content = "Button pressed "+button.value;
+
+      const dropdownStore = useDropdownStore();    
+      dropdownStore.addMessage(content, 4000);
+    },  
+  }
+}
+</script>
+
+
 
 
 <style scoped lang="scss">
@@ -82,13 +106,6 @@ button.negative.selected {
 button.positive.selected {
     background-color: #00ff00;
 }
-
-
-button {
-  background-color: white;
-}
-
-
 
 
 

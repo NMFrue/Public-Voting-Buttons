@@ -7,7 +7,22 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <router-view />
   </main>
+
+  <DropdownDialog />
 </template>
+
+
+<script>
+import DropdownDialog from "@/components/DropdownDialog.vue";
+
+export default {
+  components: {
+    DropdownDialog,
+  },
+};
+</script>
+
+
 
 <style scoped>
 
