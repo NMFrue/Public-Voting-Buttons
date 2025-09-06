@@ -1,5 +1,13 @@
 @import './base.css';
 
+
+html {
+  /* Um in allen Texten Zeilenumbrüche zu ahben, wenn wörter zu lang für eine zeile sind.*/
+  overflow-wrap: break-word; /* moderner Standard */
+  word-break: break-word;    /* Fallback */
+  hyphens: auto;             /* Silbentrennung */
+}
+
 a {
   text-decoration: none;
   background-color: var(--Background-Color);
