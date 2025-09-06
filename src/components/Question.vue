@@ -56,6 +56,7 @@ const props = defineProps({
     position: relative;
     text-align: left;
     padding: 10px 10px;
+    box-sizing: border-box;
 }
 
 
