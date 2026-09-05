@@ -1,1 +1,0 @@
-import{c as e,o as n,t as o}from"./index-BISX4cBX.js";const r={class:"info-content"},a={__name:"InfoTileContent",props:{infoContent:{type:String,required:!0}},setup(t){return(s,c)=>(n(),e("div",r,o(t.infoContent),1))}};export{a as default};

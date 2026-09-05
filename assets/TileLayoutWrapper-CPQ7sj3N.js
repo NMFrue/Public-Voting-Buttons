@@ -1,1 +1,0 @@
-import{_ as t,c as a,o,r}from"./index-BISX4cBX.js";const s={name:"TileLayoutWrapper"},c={class:"tile-layout-wrapper"};function n(e,p,d,l,_,i){return o(),a("div",c,[r(e.$slots,"default",{},void 0)])}const f=t(s,[["render",n],["__scopeId","data-v-c9e63b7d"]]);export{f as default};

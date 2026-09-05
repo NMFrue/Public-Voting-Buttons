@@ -1,1 +1,0 @@
-import{_ as e,c as o,o as s,r as n}from"./index-BISX4cBX.js";const r={},a={class:"bottom-button-wrapper"};function c(t,_){return s(),o("div",a,[n(t.$slots,"default",{},void 0)])}const f=e(r,[["render",c],["__scopeId","data-v-74b00a74"]]);export{f as default};
