@@ -33,6 +33,7 @@ const question = computed(() =>
 .hook-rail-page {
   position: relative;
   isolation: isolate;
+  color-scheme: light;
   width: min(100% - 24px, 460px);
   margin: 0 auto;
   padding: 28px 0 48px;

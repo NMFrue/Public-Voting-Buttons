@@ -132,6 +132,8 @@ function selectWeight(index) {
   --accent: #667085;
 
   position: relative;
+  color: #182230;
+  color-scheme: light;
   overflow: visible;
   padding: 11px 12px;
   border: 1px solid #d0d5dd;
@@ -190,6 +192,7 @@ function selectWeight(index) {
 
 .statement {
   display: block;
+  color: #182230;
   font-size: 0.9rem;
   font-weight: 690;
   line-height: 1.35;
@@ -296,12 +299,55 @@ function selectWeight(index) {
 }
 
 .weight-slider {
+  appearance: none;
   width: 100%;
   height: 15px;
   margin: 0;
+  border: 0;
+  background: transparent;
   accent-color: var(--accent);
   cursor: pointer;
   touch-action: pan-y;
+}
+
+.weight-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background: #cbd5e1;
+}
+
+.weight-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-top: -6px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 1px 4px rgb(16 24 40 / 30%);
+}
+
+.weight-slider::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background: #cbd5e1;
+}
+
+.weight-slider::-moz-range-progress {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.weight-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 1px 4px rgb(16 24 40 / 30%);
 }
 
 .weight-dock .weight-slider {
@@ -375,6 +421,7 @@ function selectWeight(index) {
   display: inline-block;
   width: 20px;
   height: 8px;
+  color: inherit;
   border-radius: 1px;
   background:
     linear-gradient(currentcolor, currentcolor) center / 100% 2px no-repeat,
